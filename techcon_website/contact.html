@@ -6,6 +6,70 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <header>
+    <h1>TechCon 2024</h1>
+    <nav>
+      <a href="index.html">Homepage</a>
+      <a href="about.html">About</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Contact Information -->
+    <section>
+      <h2>Get in Touch</h2>
+      <p>Email us directly at:
+        <a href="mailto:email@example.com">email@example.com</a>
+      </p>
+      <div class="social-links">
+        <h3>Follow Us</h3>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- Location Map -->
+    <section>
+      <h2>Our Venue</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.843071911547!2d36.821946015915735!3d-1.292065399052505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d74e1bbd53%3A0x7f6c0a9f97fdf63f!2sNairobi%20CBD!5e0!3m2!1sen!2ske!4v1695712345678"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Contact Form -->
+    <section>
+      <h2>Contact Us</h2>
+      <form action="send_message.php" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Tech Conference. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
